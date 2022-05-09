@@ -12,8 +12,12 @@ if (!['dev', 'prod'].includes(mode)) {
 }
 
 export default {
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+  },
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
   preserveSymlinks: true,
+  http2: true,
   plugins: [
     legacyPlugin({
       polyfills: {
