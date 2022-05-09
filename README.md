@@ -1,14 +1,13 @@
 # AIR QUALITY APP
 
-Highlights. 
+Highlights.
 
 - App was made with use of lit-element-starter kit
-- Due to issues with web-dev-server related to CORS, 
-a fetch API proxy was used - in order
-to omit the CORS errors,  visit https://cors-anywhere.herokuapp.com/corsdemo and request temporary access. Upon clicking, the app will enable a temporary proxy that will process requests from the localhost to the API itself.
+- Due to issues with web-dev-server & API & CORS,
+  a fetch API proxy was used - in order
+  to omit the CORS errors, visit https://cors-anywhere.herokuapp.com/corsdemo and request temporary access. Upon clicking, the app will enable a temporary proxy that will process requests from the localhost to the API itself, filling them with required Request Headers. More about CORS ANYWHERE can be found under this link - [CORS Anywhere - github](https://github.com/Rob--W/cors-anywhere)
 - in order to run the application, simply install dependencies via `npm install` and launch the app with
-`npm run serve`s
-
+  `npm run serve`
 
 # LitElement JavaScript starter
 
