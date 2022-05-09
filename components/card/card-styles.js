@@ -38,6 +38,9 @@ export const styles = [
       opacity: 0.6;
       transform: scale(1.1);
     }
+    .card-list-item__title {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
     .card-list-item__data-row {
       display: flex;
       justify-content: space-between;
@@ -48,10 +51,12 @@ export const styles = [
     .card-list-item__data-key {
       font-weight: 100;
       font-size: 0.8rem;
+      font-family: 'Barlow Condensed', sans-serif;
     }
     .card-list-item__data-value {
       font-weight: 600;
       font-size: 1rem;
+      font-family: 'Bebas Neue', sans-serif;
     }
   `,
 ];
