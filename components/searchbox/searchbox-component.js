@@ -59,7 +59,9 @@ export class Searchbox extends LitElement {
     this.query = e.target.value;
     if (e.target.value.length > 4) {
       this.filteredStations = await this.stations.then((d) => {
-        return d.filter((d) => d.stationName.includes(this.query));
+        return d.filter((d) =>
+          d.stationName.toLowerCase().includes(this.query.toLowerCase())
+        );
       });
     }
   }
