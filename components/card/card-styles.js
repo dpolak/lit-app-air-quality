@@ -29,15 +29,21 @@ export const styles = [
       border: 0;
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
       transition: 0.5s;
-      opacity: 0.1;
+      opacity: 0;
       cursor: pointer;
+      z-index: 2;
+    }
+    .card-list-item:hover .card-list-item__btn,
+    .card-list-item:focus .card-list-item__btn,
+    .card-list-item:active .card-list-item__btn {
+      opacity: 0.4;
     }
     .card-list-item__btn:hover,
     .card-list-item__btn:focus,
     .card-list-item__btn:active {
-      opacity: 0.6;
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
+
     .card-list-item__title {
       font-family: 'Barlow Condensed', sans-serif;
     }
